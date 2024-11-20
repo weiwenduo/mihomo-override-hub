@@ -189,15 +189,6 @@ proxy-groups:
       - 日本节点
       - 韩国节点
       - 手动切换
-  - name: 网易音乐
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netease_Music.png
-    type: select
-    include-all: true
-    filter: (?i)网易|音乐|NetEase|Music
-    proxies:
-      - DIRECT
-      - 节点选择
-      - 自动选择
   - name: 全球直连
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
     type: select
@@ -299,7 +290,6 @@ proxy-groups:
       - 微软服务
       - 苹果服务
       - 游戏平台
-      - 网易音乐
       - 全球直连
       - 广告拦截
       - 应用净化
@@ -400,13 +390,6 @@ rule-providers:
   OpenAi:
     url: https://ghp.ci/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
     path: ./ruleset/OpenAi.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  NetEaseMusic:
-    url: https://ghp.ci/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetEaseMusic.list
-    path: ./ruleset/NetEaseMusic.list
     behavior: classical
     interval: 86400
     format: text
@@ -524,7 +507,6 @@ rules:
   - "RULE-SET,Apple,苹果服务"
   - "RULE-SET,Telegram,电报消息"
   - "RULE-SET,OpenAi,OpenAi"
-  - "RULE-SET,NetEaseMusic,网易音乐"
   - "RULE-SET,Epic,游戏平台"
   - "RULE-SET,Origin,游戏平台"
   - "RULE-SET,Sony,游戏平台"

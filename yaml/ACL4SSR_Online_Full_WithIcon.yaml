@@ -154,8 +154,8 @@ proxy-groups:
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
     type: select
     proxies:
-      - 节点选择
       - DIRECT
+      - 节点选择
       - 美国节点
       - 香港节点
       - 台湾节点
